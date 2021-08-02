@@ -69,3 +69,19 @@ export const Languages = styled.div`
   opacity: 0.5;
   font-size: 14px;
 `;
+
+export const CodeEditor = styled.div`
+  padding: 0 0 1rem;
+  //min-height: 160px;
+  border: 2px solid #6c63ff;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+`;
+
+export const CodeOutput = styled.div`
+  padding: 1rem 0;
+  //min-height: 160px;
+  border: 2px solid #cd6cd4;
+  border-radius: 7px;
+  padding: 1rem;
+`;
