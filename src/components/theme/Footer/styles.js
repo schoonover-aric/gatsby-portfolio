@@ -38,7 +38,7 @@ export const Links = styled.div`
 
     &:first-child,
     &:last-child {
-      margin: 0;
+      margin: 0 .5rem;
     }
   }
 `;
@@ -47,7 +47,7 @@ export const Details = styled.div`
   h2,
   a,
   span {
-    color: #212121;
+    color: #707070;
   }
 
   @media (max-width: 680px) {

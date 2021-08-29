@@ -1,0 +1,34 @@
+table,
+th,
+td {
+  border: solid 1px #ddd;
+  border-collapse: collapse;
+  padding: 2px 3px;
+  text-align: center;
+}
+th:first-child,
+td:first-child {
+  padding-left: 1rem !important;
+  padding-right: 0 !important;
+}
+input[type="button"] {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+#booksTable input[type="text"],
+select {
+  text-align: center;
+  border: solid 1px #ccc;
+  width: auto;
+  padding: 2px 3px;
+}
+#booksTable {
+  margin: 0;
+}
+#booksTable input,
+#booksTable option,
+#booksTable select {
+  background: orange;
+}

@@ -1,5 +1,6 @@
 {
 	"name": "develop-with-aric",
+	"homepage": ".",
 	"private": true,
 	"description": "personal portfolio website",
 	"version": "0.1.2",

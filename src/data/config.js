@@ -4,12 +4,12 @@ module.exports = {
   author: 'Aric Schoonover',
   url: 'http://developwitharic.com',
   legalName: 'Aric Schoonover',
-  defaultDescription: 'I’m Aric and I’m a Backend & Devops engineer!',
+  defaultDescription: 'I’m Aric and I’m a Web and Software Developer!',
   socialLinks: {
     github: 'https://github.com/schoonover-aric',
     linkedin: 'https://www.linkedin.com/in/aric-schoonover-765a3136/',
   },
-  googleAnalyticsID: 'UA-88875900-4',
+  googleAnalyticsID: '',
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
   social: {

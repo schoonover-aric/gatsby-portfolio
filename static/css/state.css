@@ -1,0 +1,27 @@
+#javascriptExample p {
+  font-size: 2rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 0.5rem;
+}
+#javascriptExample button {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem !important;
+  border: 1px solid #e6e6e6;
+  color: #212121;
+  background: #e6e6e6;
+}
+#javascriptExample button:hover {
+  color: #e6e6e6;
+  background: #212121;
+  border: 1px solid #e6e6e6;
+}
+#javascriptExample .npm__react-simple-code-editor__textarea {
+  pointer-events: none;
+}
+#useStateHeading {
+  margin: 0;
+}

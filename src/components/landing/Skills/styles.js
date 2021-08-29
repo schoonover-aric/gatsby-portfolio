@@ -31,10 +31,39 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 26pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+    color: ${({ theme }) => (theme === 'dark' ? '#e6e6e6' : '#707070')};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    }
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    }
+
+    @media (max-width: 680px) {
+      font-size: 28pt;
+    }
+  }
+
+  h4 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    }
+
+    @media (max-width: 680px) {
+      font-size: 26pt;
     }
   }
 

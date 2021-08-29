@@ -28,13 +28,6 @@ module.exports = {
 			},
 		},
 		{
-			resolve: "gatsby-plugin-google-analytics",
-			options: {
-				trackingId: config.googleAnalyticsID,
-				head: true,
-			},
-		},
-		{
 			resolve: "gatsby-plugin-manifest",
 			options: {
 				name: config.defaultTitle,
@@ -43,7 +36,7 @@ module.exports = {
 				background_color: config.backgroundColor,
 				theme_color: config.themeColor,
 				display: "minimal-ui",
-				icon: "./static/favicon/favicon-512.png",
+				icon: "./static/favicon/logoWhite.png",
 			},
 		},
 		"gatsby-plugin-offline",

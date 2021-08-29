@@ -7,5 +7,5 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react"
   },
-  "include": ["src/**/*", "src/components/landing/Projects/like_button.js"]
+  "include": ["src/**/*", "static/like_button.js", "static/2.eccb9c9c.chunk.js"]
 }

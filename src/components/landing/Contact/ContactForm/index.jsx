@@ -3,9 +3,9 @@ import axios from "axios";
 import { Formik, Form, FastField, ErrorMessage } from "formik";
 import Recaptcha from "react-google-recaptcha";
 import * as Yup from "yup";
-import { url } from "data/config";
+//import { url } from "data/config";
 import { Button, Input } from "components/common";
-import { Error, Center, InputField } from "./styles";
+import { Details, Error, Center, InputField } from "./styles";
 
 const ContactForm = () => (
 	<Formik
@@ -34,10 +34,7 @@ const ContactForm = () => (
 			try {
 				await axios({
 					method: "POST",
-					url:
-						process.env.NODE_ENV !== "development"
-							? `${url}/api/contact`
-							: "http://localhost:3000/api/contact",
+					url: "https://api.formium.io/submit/61197d3fe741b60001c705cb/contact",
 					headers: {
 						"Content-Type": "application/json",
 					},
@@ -59,6 +56,7 @@ const ContactForm = () => (
 	>
 		{({ values, touched, errors, setFieldValue, isSubmitting }) => (
 			<Form>
+				<Details><h4>Contact Me</h4></Details>
 				<InputField>
 					<Input
 						as={FastField}
