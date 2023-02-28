@@ -6,16 +6,10 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2>Develop With Aric</h2>
+        <h2 style={{ marginBottom: ".5rem"}}>Develop With Aric</h2>
+        <h4 style={{ marginBottom: ".25rem", fontWeight: "normal", color: "#707070"}}>by Aric Schoonover</h4>
         <span>
-          © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
-          <span aria-label="love" role="img">
-            💖
-          </span>{' '}
-          by{' '}
-          <a href="http://developwitharic.com/" rel="noopener noreferrer" target="_blank">
-            Aric Schoonover
-          </a>
+          © All rights are reserved | {new Date().getFullYear()}
         </span>
       </Details>
       

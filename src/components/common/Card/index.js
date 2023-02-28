@@ -23,6 +23,9 @@ export const Card = styled.div`
   #booksTable th, #booksTable td, #booksTable tr {
     border: 1px solid ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
   }
+  .myHeading {
+    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+  }
 `;
 
 export const TitleWrap = styled.div`

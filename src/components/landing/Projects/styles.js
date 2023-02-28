@@ -27,7 +27,7 @@ export const Details = styled.div`
   }
 
   h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 2.5rem;
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
     
@@ -41,7 +41,7 @@ export const Details = styled.div`
   } 
 
   h4 {
-    margin-bottom: 2.5rem;
+    margin-bottom: .5rem;
     font-size: 2rem;
     font-weight: bold;
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
@@ -51,7 +51,7 @@ export const Details = styled.div`
     }
 
     @media (max-width: 680px) {
-      font-size: 26pt;
+      font-size: 1.5rem;
     }
   }
 `;
@@ -89,7 +89,7 @@ export const Grid2 = styled.div`
 `;
 
 export const Item = styled.div`
-  width: 100%;
+  width: 100%; 
   height: 100%;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);

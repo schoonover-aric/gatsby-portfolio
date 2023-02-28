@@ -1,13 +1,13 @@
 module.exports = {
   defaultTitle: 'Develop with Aric',
-  logo: 'http://developwitharic.com/wp-content/uploads/2017/10/logoWhite.png',
+  logo: './icons/logoWhite.png',
   author: 'Aric Schoonover',
-  url: 'http://developwitharic.com',
+  url: 'https://develop-with-aric.netlify.app/', // change to'./'...?
   legalName: 'Aric Schoonover',
   defaultDescription: 'I’m Aric and I’m a Web and Software Developer!',
   socialLinks: {
     github: 'https://github.com/schoonover-aric',
-    linkedin: 'https://www.linkedin.com/in/aric-schoonover-765a3136/',
+    linkedin: 'https://www.linkedin.com/in/aric-schoonover',
   },
   googleAnalyticsID: '',
   themeColor: '#6b63ff',

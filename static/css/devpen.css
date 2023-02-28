@@ -487,14 +487,20 @@ span.CodeMirror-selectedtext {
 iframe {
   height: 300px;
 }
-.pane {
-}
 .pane.top-pane {
   display: flex;
   border-bottom: 3px solid #e6e6e6;
 }
 .editor-container {
   width: 33.33%;
+}
+@media only screen and (max-width: 960px) {
+  .pane.top-pane {
+    flex-direction: column;
+  }
+  .editor-container {
+    width: 100%;
+  }
 }
 .react-codemirror2 {
   border-right: 3px solid #e6e6e6;

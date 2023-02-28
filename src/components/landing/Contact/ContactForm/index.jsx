@@ -1,9 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Formik, Form, FastField, ErrorMessage } from "formik";
-import Recaptcha from "react-google-recaptcha";
 import * as Yup from "yup";
-//import { url } from "data/config";
 import { Button, Input } from "components/common";
 import { Details, Error, Center, InputField } from "./styles";
 
@@ -13,7 +11,6 @@ const ContactForm = () => (
 			name: "",
 			email: "",
 			message: "",
-			recaptcha: "",
 			success: false,
 		}}
 		validationSchema={Yup.object().shape({
@@ -22,10 +19,6 @@ const ContactForm = () => (
 				.email("Invalid email")
 				.required("Email field is required"),
 			message: Yup.string().required("Message field is required"),
-			recaptcha:
-				process.env.NODE_ENV !== "development"
-					? Yup.string().required("Robots are not welcome yet!")
-					: Yup.string(),
 		})}
 		onSubmit={async (
 			{ name, email, message },
@@ -55,8 +48,9 @@ const ContactForm = () => (
 		}}
 	>
 		{({ values, touched, errors, setFieldValue, isSubmitting }) => (
-			<Form>
-				<Details><h4>Contact Me</h4></Details>
+			<Form action={process.env.PORTFOLIO_FORMIUM_ENDPOINT} name="contact" netlify="true" netlify-honeypot="bot-field">
+				<Details><h2>Contact Me</h2></Details>
+				<input type="hidden" name="form-name" aria-hidden="true" value="contact" />
 				<InputField>
 					<Input
 						as={FastField}
@@ -96,20 +90,6 @@ const ContactForm = () => (
 					/>
 					<ErrorMessage component={Error} name="message" />
 				</InputField>
-				{values.name &&
-					values.email &&
-					values.message &&
-					process.env.NODE_ENV !== "development" && (
-						<InputField>
-							<FastField
-								component={Recaptcha}
-								sitekey={process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY}
-								name="recaptcha"
-								onChange={(value) => setFieldValue("recaptcha", value)}
-							/>
-							<ErrorMessage component={Error} name="recaptcha" />
-						</InputField>
-					)}
 				{values.success && (
 					<InputField>
 						<Center>

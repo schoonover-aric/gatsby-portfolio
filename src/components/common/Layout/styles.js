@@ -388,7 +388,7 @@ export const Global = createGlobalStyle`
       word-wrap: normal;
       padding: 1.45rem;
     }
-    table {
+    table { 
       margin-left: 0;
       margin-right: 0;
       margin-top: 0;

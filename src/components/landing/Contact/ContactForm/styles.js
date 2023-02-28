@@ -40,9 +40,9 @@ export const Details = styled.div`
   }
 
   h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 2.5rem;
-    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+    // color: ${({ theme }) => (theme === 'light' ? 'blue' : 'red')};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};

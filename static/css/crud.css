@@ -16,16 +16,22 @@ input[type="button"] {
   border: none;
   color: #fff;
 }
-
-#booksTable input[type="text"],
-select {
-  text-align: center;
-  border: solid 1px #ccc;
-  width: auto;
-  padding: 2px 3px;
+#container {
+  overflow-x: scroll;
 }
 #booksTable {
   margin: 0;
+}
+#booksTable tr:last-child > td:nth-child(4),
+#booksTable tr:last-child > td:nth-child(4) > input[type="text"] {
+  width: 5rem;
+}
+#booksTable #booksTable input[type="text"],
+select {
+  text-align: center;
+  border: solid 1px #ccc;
+  width: 5rem;
+  padding: 2px 3px;
 }
 #booksTable input,
 #booksTable option,

@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
 
   @media (max-width: 960px) {
     flex-direction: column;
+    padding: 3rem 0 0;
+    margin-bottom: -5rem;
   }
 `;
 
@@ -27,6 +29,20 @@ export const Details = styled.div`
     //color: #707070;
   }
 
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+
+    @media (max-width: 960px) {
+      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    }
+
+    @media (max-width: 680px) {
+      font-size: 28pt;
+    }
+  }
+  
   h4 {
     margin-bottom: 2.5rem;
     font-size: 2rem;
@@ -63,5 +79,13 @@ export const Thumbnail = styled.div`
 
   img {
     width: 100%;
+
+    @media (max-width: 960px) {
+      width: 60%;
+      margin-left: 15%;
+    }
+    @media (max-width: 680px) {
+      width: 70%;
+    }
   }
 `;

@@ -32,4 +32,8 @@ export const Button = styled.button`
     `
 		background: #0074d9;
 	`}
+
+  @media (max-width: 500px) {
+    padding: 0.2rem .5rem;
+  }
 `;

@@ -2,9 +2,9 @@ var crudApp = new function () {
 
     // An array of JSON objects with values.
     this.myBooks = [
-        { ID: '1', Book_Name: 'Computer Architecture', Category: 'Computers', Price: 125.60 },
-        { ID: '2', Book_Name: 'Asp.Net 4 Blue Book', Category: 'Programming', Price: 56.00 },
-        { ID: '3', Book_Name: 'Popular Science', Category: 'Science', Price: 210.40 }
+        { ID: '1', Book_Name: 'Software Development', Category: 'Software', Price: 119.99 },
+        { ID: '2', Book_Name: 'Web Development', Category: 'Programming', Price: 75.84 },
+        { ID: '3', Book_Name: 'The Legend of Zelda', Category: 'Adventure', Price: 123.45 }
     ]
 
     this.category = ['Business', 'Computers', 'Programming', 'Science'];
@@ -23,7 +23,7 @@ var crudApp = new function () {
 
         // CREATE A TABLE.
         var table = document.createElement('table');
-        table.setAttribute('id', 'booksTable');     // Seet table id.
+        table.setAttribute('id', 'booksTable');     // Set table id.
 
         var tr = table.insertRow(-1);               // Create a row (for header).
 
