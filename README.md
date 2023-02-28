@@ -36,7 +36,7 @@ This is an extension of a Gatsby.js starter theme that I used to build my person
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more details
 
-
+<br /><br />
 
 <p align="center">
   <a href="https://www.gatsbyjs.com">
