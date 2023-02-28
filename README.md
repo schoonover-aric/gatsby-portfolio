@@ -36,6 +36,8 @@ This is an extension of a Gatsby.js starter theme that I used to build my person
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more details
 
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.com">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
